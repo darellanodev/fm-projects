@@ -8,3 +8,21 @@
 body {
   background-color: hsl(212, 45%, 89%);
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+.card__image {
+  width: 300px;
+  border-radius: 7px;
+}
+.card__title {
+}
+.card__description {
+}
