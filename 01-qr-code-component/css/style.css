@@ -8,6 +8,11 @@
   --radius-img: 10px;
   --font-main: 'Outfit', Arial, sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--clr-bg);
   height: 100vh;
