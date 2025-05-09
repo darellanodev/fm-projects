@@ -7,6 +7,8 @@
   --radius-card: 0.9rem;
   --radius-img: 0.6rem;
   --font-main: 'Outfit', Arial, sans-serif;
+  --font-title: 1.4rem;
+  --font-desc: 1rem;
 }
 *,
 *::before,
@@ -46,6 +48,10 @@ body {
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
 }
 @media (max-width: 350px) {
+  :root {
+    --font-title: 1.1rem;
+    --font-desc: 0.85rem;
+  }
   .card {
     width: 90vw;
     padding: 1rem;
@@ -61,17 +67,16 @@ body {
 }
 .card__content > h1 {
   margin-bottom: 0;
-  font-size: 1.4rem;
-}
-.card__title {
+  font-size: var(--font-title);
   font-weight: 700;
   color: var(--clr-title);
 }
-.card__description {
+.card__content p {
   font-weight: 400;
   color: var(--clr-desc);
   padding-left: 0.6rem;
   padding-right: 0.6rem;
+  font-size: var(--font-desc);
 }
 .attribution {
   font-size: 0.7rem;
