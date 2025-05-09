@@ -1,12 +1,15 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 body {
   background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  margin: 0;
 }
 .card {
   display: flex;
@@ -22,7 +25,17 @@ body {
   width: 300px;
   border-radius: 7px;
 }
-.card__title {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
-.card__description {
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
