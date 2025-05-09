@@ -27,6 +27,14 @@ body {
   width: 300px;
   border-radius: 7px;
 }
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+.card__content > h2 {
+  margin-bottom: 0px;
+}
+
 .card__title {
   font-weight: 700;
   color: hsl(218, 44%, 22%);
