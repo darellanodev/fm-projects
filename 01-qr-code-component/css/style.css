@@ -37,8 +37,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-.card__content > h2 {
+.card__content > h1 {
   margin-bottom: 0px;
+  font-size: 23px;
 }
 .card__title {
   font-weight: 700;
