@@ -41,11 +41,11 @@ body {
   align-items: center;
   background-color: var(--clr-card-bg);
   border-radius: var(--radius-card);
-  padding: 15px;
-  width: 300px;
+  padding: 1.2rem;
+  width: 19rem;
 }
 .card__image {
-  width: 300px;
+  width: 100%;
   border-radius: var(--radius-img);
 }
 .card__content {
