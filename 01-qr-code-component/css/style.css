@@ -1,3 +1,10 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Outfit', Arial, sans-serif;
+  font-weight: 400;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,11 +12,6 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-body {
-  background-color: hsl(212, 45%, 89%);
-  height: 100vh;
-  margin: 0;
 }
 .card {
   display: flex;
@@ -24,6 +26,16 @@ body {
 .card__image {
   width: 300px;
   border-radius: 7px;
+}
+.card__title {
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+}
+.card__description {
+  font-weight: 400;
+  color: hsl(216, 15%, 48%);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .container {
   display: flex;
