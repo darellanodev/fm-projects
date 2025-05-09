@@ -1,8 +1,18 @@
+:root {
+  --clr-bg: hsl(212, 45%, 89%);
+  --clr-card-bg: #fff;
+  --clr-title: hsl(218, 44%, 22%);
+  --clr-desc: hsl(216, 15%, 48%);
+  --clr-link: hsl(228, 45%, 44%);
+  --radius-card: 15px;
+  --radius-img: 10px;
+  --font-main: 'Outfit', Arial, sans-serif;
+}
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--clr-bg);
   height: 100vh;
   margin: 0;
-  font-family: 'Outfit', Arial, sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
 }
 .container {
@@ -24,14 +34,14 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  background-color: white;
-  border-radius: 15px;
+  background-color: var(--clr-card-bg);
+  border-radius: var(--radius-card);
   padding: 15px;
   width: 300px;
 }
 .card__image {
   width: 300px;
-  border-radius: 10px;
+  border-radius: var(--radius-img);
 }
 .card__content {
   display: flex;
@@ -43,11 +53,11 @@ body {
 }
 .card__title {
   font-weight: 700;
-  color: hsl(218, 44%, 22%);
+  color: var(--clr-title);
 }
 .card__description {
   font-weight: 400;
-  color: hsl(216, 15%, 48%);
+  color: var(--clr-desc);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -57,5 +67,5 @@ body {
   margin-bottom: 10px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-link);
 }
