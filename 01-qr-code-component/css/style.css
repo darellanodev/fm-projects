@@ -44,6 +44,12 @@ body {
   padding: 1.2rem;
   width: 19rem;
 }
+@media (max-width: 350px) {
+  .card {
+    width: 90vw;
+    padding: 1rem;
+  }
+}
 .card__image {
   width: 100%;
   border-radius: var(--radius-img);
