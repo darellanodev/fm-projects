@@ -4,7 +4,11 @@ This repository contains projects that I am working on from the Frontend Mentor 
 
 ## Github repository
 
-- <https://github.com/darellanodev/fm-projects>
+<https://github.com/darellanodev/fm-projects>
+
+## Try it online
+
+<https://darellanodev.github.io/fm-projects/>
 
 ## List of projects
 
