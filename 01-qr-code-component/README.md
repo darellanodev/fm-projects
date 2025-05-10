@@ -1,103 +1,132 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub repository](https://github.com/darellanodev/fm-projects/01-qr-code-component)
+- Live Site URL: [Live site](https://darellanodev.github.io/fm-projects/01-qr-code-component)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- **Semantic HTML5 markup**  
+  (Using semantic tags like `<main>`, `<article>`, `<footer>`)
+- **CSS custom properties (variables)**  
+  (Centralized color palette, sizes, border radii, and fonts in `:root`)
+- **Flexbox**  
+  (For layout structure and vertical/horizontal centering)
+- **Responsive design with media queries**  
+  (Font sizes and layout adapt to small screens)
+- **BEM-inspired class naming**  
+  (Classes like `.card__image`, `.card__content` for clarity and maintainability)
+- **Accessibility best practices**  
+  (Descriptive `alt` attributes for images and secure links with `rel="noopener"`)
+- **Google Fonts**  
+  (Loading and using the "Outfit" font from Google Fonts)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While working on this project, I deepened my understanding of several key web development concepts:
 
-To see how you can add code snippets, see below:
+- **Semantic HTML**  
+  I used semantic tags like `<main>`, `<article>`, and `<footer>` to create a meaningful and accessible document structure.
+
+- **CSS Custom Properties (Variables)**
+  I centralized colors, font sizes, and border radii using CSS variables, which improved maintainability and scalability.
+
+```css
+:root {
+  --clr-bg: hsl(212, 45%, 89%);
+  --radius-card: 0.9rem;
+  --font-title: 1.4rem;
+}
+```
+
+- **Responsive Design with Flexbox and Media Queries**
+  I combined Flexbox for layout and media queries to ensure the design adapts smoothly to different screen sizes.
+
+```css
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19rem;
+}
+
+@media (max-width: 350px) {
+  .card {
+    width: 90vw;
+    padding: 1rem;
+  }
+}
+```
+
+- **BEM-inspired Class Naming**
+  I applied BEM-like naming conventions for clarity and modularity in CSS class names.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+<div class="card__content">
+  <h1>Title</h1>
+  <p>Description</p>
+</div>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- **Accessibility Best Practices**
+  I ensured images have descriptive `alt` attributes and external links use `rel="noopener"` for security.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```html
+<img class="card__image" src="images/image-qr-code.png" alt="QR code to Frontend Mentor" />
+<a href="https://frontendmentor.io" target="_blank" rel="noopener">Frontend Mentor</a>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I would like to focus on the following areas to further improve my frontend skills:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Adopting a Mobile-First Workflow**  
+  While my project is responsive, I want to get more comfortable with designing and coding mobile-first, building styles for small screens first and then enhancing for larger devices using `min-width` media queries.
+
+- **Deeper Accessibility Practices**  
+  I plan to learn more about accessibility, including ARIA roles, keyboard navigation, and color contrast to ensure my projects are usable by everyone.
+
+- **Exploring CSS Grid**  
+  I primarily used Flexbox for layout in this project. I want to experiment more with CSS Grid for more complex and flexible layouts.
+
+- **Performance Optimization**  
+  I aim to improve my understanding of web performance, such as optimizing images, reducing CSS file size, and improving load times.
+
+- **Component Reusability and Scalability**  
+  I want to practice structuring my CSS and HTML so that components are even more reusable and scalable, possibly exploring methodologies like ITCSS or utility-first CSS.
+
+By focusing on these areas, I hope to write cleaner, more efficient, and more accessible code in future projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Perplexity AI](https://www.perplexity.ai/) - This AI tool helped me review my code as I was building the project. I used it to get suggestions on best practices, accessibility, and code organization. I found its feedback and explanations very helpful and will use it in future projects.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [darellanodev](https://darellanodev.github.io/)
+- Frontend Mentor - [@darellanodev](https://www.frontendmentor.io/profile/darellanodev)
