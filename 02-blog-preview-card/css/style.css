@@ -117,6 +117,7 @@ body {
 
 .blog-card__date {
   font-size: var(--date-text-size);
+  margin-top: -0.7rem;
 }
 
 .page__footer {
