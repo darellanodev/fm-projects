@@ -14,7 +14,7 @@ body {
 }
 
 :root {
-  --page-bg: #f7f7f7;
+  --page-bg: #aaa;
   --footer-bg: #222;
   --footer-color: #fff;
   --card-bg: #fff;
@@ -45,11 +45,35 @@ body {
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   max-width: var(--card-max-width);
-  width: 100%;
+  width: 30rem;
 }
 
 .blog-card__content {
   padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.blog-card__image {
+  border-radius: 0.9rem;
+  width: 100%;
+}
+
+.blog-card__tags {
+  list-style-type: none;
+}
+.blog-card__tag {
+  display: inline-block;
+  background-color: var(--page-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.blog-card__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .page__footer {
