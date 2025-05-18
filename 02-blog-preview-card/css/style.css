@@ -43,9 +43,11 @@ body {
 .blog-card {
   background: var(--card-bg);
   border-radius: var(--card-radius);
-  box-shadow: var(--card-shadow);
+  box-shadow: 7px 7px 0px 0px black;
   max-width: var(--card-max-width);
   width: 30rem;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .blog-card__content {
