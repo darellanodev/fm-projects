@@ -18,14 +18,15 @@ h6 {
   --page-bg: hsl(47, 88%, 63%);
   --footer-bg: #222;
   --footer-color: #fff;
+  --footer-links-color: #777;
   --card-bg: #fff;
   --gray-950-color: hsl(0, 0%, 7%);
   --card-radius: 1.5rem;
   --card-padding: 1.5rem;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --card-max-width: 90vw;
-  --small-text-size: 0.9rem;
+  --card-text-size: 0.9rem;
   --date-text-size: 1rem;
+  --footer-text-size: 0.7rem;
 }
 
 body {
@@ -51,7 +52,6 @@ body {
   background: var(--card-bg);
   border-radius: var(--card-radius);
   box-shadow: 11px 11px 0px 0px black;
-  max-width: var(--card-max-width);
   width: 28rem;
   border-style: solid;
   border-width: 1px;
@@ -72,7 +72,7 @@ body {
 
 .blog-card__tags {
   list-style-type: none;
-  font-size: var(--small-text-size);
+  font-size: var(--card-text-size);
 }
 
 .blog-card__tag {
@@ -110,7 +110,7 @@ body {
 }
 
 .blog-card__author-name {
-  font-size: var(--small-text-size);
+  font-size: var(--card-text-size);
   font-weight: 800;
 }
 
@@ -119,6 +119,11 @@ body {
   color: var(--footer-color);
   text-align: center;
   padding: 1rem;
+  font-size: var(--footer-text-size);
+}
+
+.page__footer > a {
+  color: var(--footer-links-color);
 }
 
 .attribution {
