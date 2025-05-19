@@ -24,6 +24,7 @@ h6 {
   --card-radius: 1.5rem;
   --card-padding: 1.5rem;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --title-text-size: 1.5rem;
   --card-text-size: 0.9rem;
   --date-text-size: 1rem;
   --footer-text-size: 0.7rem;
@@ -91,6 +92,13 @@ body {
 
 .blog-card__title {
   letter-spacing: -0.02rem;
+  font-size: var(--title-text-size);
+  font-weight: 800;
+}
+
+.blog-card__title:hover {
+  color: var(--page-bg);
+  cursor: pointer;
 }
 
 .blog-card__description {
