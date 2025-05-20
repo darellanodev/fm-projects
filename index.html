@@ -12,24 +12,15 @@
 
 
     <main class="page__main">
-
         <h1>Front-end projects from Frontend Mentor</h1>
         <p>This is a collection of challenges I made to practice front-end skills</p>
-        <a href="./01-qr-code-component/">01-qr-code-component</a>
-        <article class="blog-card">
-            <div class="blog-card__content">
-                <img class="blog-card__image" src="./img/project1.png" alt="Article illustration">
-                <p class="blog-card__challenge">Frontend Mentor Challenge 1</p>
-                <a class="blog-card__title" href="./01-qr-code-component/">Blog Preview Card</a>
-                <div class="blog-card__description">
-                    I used BEM naming conventions, responsive design, CSS variables, and Flexbox.
-                </div>
-                <div class="blog-card__author">
-                    <img src="./img/darellanodev_avatar.webp" alt="Darellanodev" class="blog-card__author-image">
-                    <div class="blog-card__author-name">Darellanodev</div>
-                </div>
-            </div>
-        </article>
+        <blog-card image="./img/project1.png" challenge="Frontend Mentor Challenge 2" title="HTML & CSS foundations"
+            description="I used BEM naming conventions, responsive design, CSS variables, and Flexbox."
+            author="Darellanodev" author-image="./img/darellanodev_avatar.webp"></blog-card>
+
+        <blog-card image="./img/project2.png" challenge="Frontend Mentor Challenge 2" title="CSS Grid Layout"
+            description="I used BEM naming conventions, responsive design, CSS variables, and Flexbox."
+            author="Darellanodev" author-image="./img/darellanodev_avatar.webp"></blog-card>
     </main>
 
     <footer class="page__footer">
@@ -48,7 +39,7 @@
             GitHub repository
         </a>
     </footer>
-
+    <script src="./js/blog-card.js"></script>
 </body>
 
 </html>
