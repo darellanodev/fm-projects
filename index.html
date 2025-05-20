@@ -5,18 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index of Projects</title>
-    <link rel="stylesheet" href="./css/sakura-vader.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <main>
-        <h1>Frontend projects</h1>
-        <p>Below is a list of my projects developed on Frontend Mentor to enhance my frontend skills.
-            You can click on any of the following links to see the solution of the exercise.</p>
+
+
+    <main class="page__main">
+
+        <h1>Front-end projects from Frontend Mentor</h1>
+        <p>This is a collection of challenges I made to practice front-end skills</p>
         <a href="./01-qr-code-component/">01-qr-code-component</a>
+        <article class="blog-card">
+            <div class="blog-card__content">
+                <img class="blog-card__image" src="./img/project1.png" alt="Article illustration">
+                <p class="blog-card__challenge">Frontend Mentor Challenge 1</p>
+                <a class="blog-card__title" href="./01-qr-code-component/">Blog Preview Card</a>
+                <div class="blog-card__description">
+                    I used BEM naming conventions, responsive design, CSS variables, and Flexbox.
+                </div>
+                <div class="blog-card__author">
+                    <img src="./img/darellanodev_avatar.webp" alt="Darellanodev" class="blog-card__author-image">
+                    <div class="blog-card__author-name">Darellanodev</div>
+                </div>
+            </div>
+        </article>
     </main>
-    <footer>
+
+    <footer class="page__footer">
         <a href="https://github.com/darellanodev/fm-projects"
             style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
             <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +48,7 @@
             GitHub repository
         </a>
     </footer>
+
 </body>
 
 </html>
