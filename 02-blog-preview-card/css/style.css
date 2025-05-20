@@ -24,7 +24,7 @@ h6 {
   --color-gray-500: #6b6b6b;
   --radius-card: 1.5rem;
   --padding-card: 1.5rem;
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-card: 11px 11px 0px 0px black;
   --size-text-title: 1.5rem;
   --size-text-card: 0.9rem;
   --size-text-date: 1rem;
@@ -53,7 +53,7 @@ body {
 .blog-card {
   background: var(--background-card);
   border-radius: var(--radius-card);
-  box-shadow: 11px 11px 0px 0px black;
+  box-shadow: var(--shadow-card);
   width: 28rem;
   border-style: solid;
   border-width: 1px;
