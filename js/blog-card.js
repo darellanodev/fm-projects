@@ -12,7 +12,9 @@ class BlogCard extends HTMLElement {
           <p class="blog-card__challenge">
             ${this.getAttribute("challenge") || ""}
           </p>
-          <a class="blog-card__title">${this.getAttribute("title") || ""}</a>
+          <a class="blog-card__title" href="${
+            this.getAttribute("href") || "#"
+          }">${this.getAttribute("title") || ""}</a>
           <div class="blog-card__description">
             ${this.getAttribute("description") || ""}
           </div>

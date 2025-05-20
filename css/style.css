@@ -46,8 +46,8 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .blog-card {
@@ -76,13 +76,15 @@ body {
   margin-top: -0.7rem;
 }
 
-.blog-card__title {
+a.blog-card__title {
   letter-spacing: -0.02rem;
   font-size: var(--size-text-title);
   font-weight: 800;
+  color: var(--color-gray-950);
+  text-decoration: none;
 }
 
-.blog-card__title:hover {
+a.blog-card__title:hover {
   color: var(--background-page);
   cursor: pointer;
 }
@@ -132,4 +134,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page__main-title {
+  margin-bottom: 1.2rem;
+}
+.page__main-subtitle {
+  color: white;
+  font-weight: bold;
 }
