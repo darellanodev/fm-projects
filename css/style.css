@@ -125,3 +125,11 @@ body {
 .page__footer > a:hover {
   color: var(--color-footer-links-hover);
 }
+
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
