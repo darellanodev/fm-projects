@@ -32,7 +32,7 @@ h6 {
 }
 
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 500;
   line-height: 1.8rem;
   min-height: 100vh;
@@ -105,9 +105,15 @@ a.blog-card__title:hover {
   width: 36px;
 }
 
-.blog-card__author-name {
+a.blog-card__author-name {
   font-size: var(--size-text-card);
   font-weight: 800;
+  text-decoration: none;
+  color: var(--color-gray-950);
+}
+
+a.blog-card__author-name:hover {
+  color: var(--background-page);
 }
 
 .page__footer {
@@ -145,6 +151,7 @@ a.blog-card__title:hover {
 .page__title {
   margin-bottom: 1.2rem;
 }
+
 .page__subtitle {
   color: white;
   font-weight: bold;
