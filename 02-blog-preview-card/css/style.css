@@ -54,7 +54,7 @@ body {
   background: var(--background-card);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
-  width: 28rem;
+  width: min(28rem, 90vw);
   border-style: solid;
   border-width: 1px;
 }

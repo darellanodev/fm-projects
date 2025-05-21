@@ -53,7 +53,7 @@ body {
 .blog-card {
   background: var(--background-card);
   border-radius: var(--radius-card);
-  width: 28rem;
+  width: min(28rem, 90vw);
   border-style: solid;
   border-width: 1px;
 }
@@ -134,14 +134,18 @@ a.blog-card__title:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem;
 }
 
-.page__main-title {
+.page__header {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.page__title {
   margin-bottom: 1.2rem;
 }
-.page__main-subtitle {
+.page__subtitle {
   color: white;
   font-weight: bold;
 }
