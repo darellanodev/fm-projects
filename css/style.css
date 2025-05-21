@@ -71,6 +71,18 @@ body {
   width: 100%;
 }
 
+.blog-card__image-link {
+  display: block;
+  text-decoration: none;
+}
+
+.blog-card__image-link:focus .blog-card__image,
+.blog-card__image-link:hover .blog-card__image {
+  filter: brightness(0.95);
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+
 .blog-card__challenge {
   font-size: var(--size-text-date);
   margin-top: -0.7rem;

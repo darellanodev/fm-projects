@@ -6,7 +6,9 @@ class BlogCard extends HTMLElement {
       <link rel="stylesheet" href="./css/style.css">
       <article class="blog-card">
         <div class="blog-card__content">
-          <img class="blog-card__image" src="${this.getAttribute('image') || ''}" alt="Article illustration" title="${this.getAttribute('title') || ''}">
+          <a class="blog-card__image-link" href="${this.getAttribute('href') || '#'}" title="${this.getAttribute('title') || ''}">
+            <img class="blog-card__image" src="${this.getAttribute('image') || ''}" alt="Article illustration" title="${this.getAttribute('title') || ''}">
+          </a>
           <p class="blog-card__challenge">
             ${this.getAttribute('challenge') || ''}
           </p>
