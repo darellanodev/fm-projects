@@ -50,7 +50,7 @@ body {
   margin-top: 2rem;
 }
 
-.blog-card {
+.card {
   background: var(--background-card);
   border-radius: var(--radius-card);
   width: min(28rem, 90vw);
@@ -58,7 +58,7 @@ body {
   border-width: 1px;
 }
 
-.blog-card__content {
+.card__content {
   padding: var(--padding-card);
   display: flex;
   flex-direction: column;
@@ -66,29 +66,29 @@ body {
   color: var(--color-gray-950);
 }
 
-.blog-card__image {
+.card__image {
   border-radius: 0.9rem;
   width: 100%;
 }
 
-.blog-card__image-link {
+.card__image-link {
   display: block;
   text-decoration: none;
 }
 
-.blog-card__image-link:focus .blog-card__image,
-.blog-card__image-link:hover .blog-card__image {
+.card__image-link:focus .card__image,
+.card__image-link:hover .card__image {
   filter: brightness(0.95);
   transition: filter 0.2s;
   cursor: pointer;
 }
 
-.blog-card__challenge {
+.card__challenge {
   font-size: var(--size-text-date);
   margin-top: -0.7rem;
 }
 
-a.blog-card__title {
+a.card__title {
   letter-spacing: -0.02rem;
   font-size: var(--size-text-title);
   font-weight: 800;
@@ -97,29 +97,29 @@ a.blog-card__title {
   transition: color 0.2s;
 }
 
-a.blog-card__title:hover {
+a.card__title:hover {
   color: var(--background-page);
   cursor: pointer;
 }
 
-.blog-card__description {
+.card__description {
   font-size: 1.1rem;
   color: var(--color-gray-500);
   letter-spacing: 0.02rem;
 }
 
-.blog-card__author {
+.card__author {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
 }
 
-.blog-card__author-image {
+.card__author-image {
   width: 36px;
 }
 
-.blog-card__author-name {
+.card__author-name {
   font-size: var(--size-text-card);
   font-weight: 800;
   text-decoration: none;
@@ -127,14 +127,14 @@ a.blog-card__title:hover {
   transition: color 0.2s;
 }
 
-.blog-card__author:hover .blog-card__author-name,
-.blog-card__author:focus .blog-card__author-name {
+.card__author:hover .card__author-name,
+.card__author:focus .card__author-name {
   color: var(--background-page);
   cursor: pointer;
 }
 
-.blog-card__author:hover .blog-card__author-image,
-.blog-card__author:focus .blog-card__author-image {
+.card__author:hover .card__author-image,
+.card__author:focus .card__author-image {
   filter: brightness(0.95);
 }
 
