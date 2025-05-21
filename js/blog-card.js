@@ -14,14 +14,10 @@ class BlogCard extends HTMLElement {
           <div class="blog-card__description">
             ${this.getAttribute('description') || ''}
           </div>
-          <div class="blog-card__author">
-            <img src="${this.getAttribute('author-image') || ''}" alt="${this.getAttribute('author') || ''}" class="blog-card__author-image" title="${
-      this.getAttribute('author') || ''
-    }">
-            <a class="blog-card__author-name" href="${this.getAttribute('author-href') || '#'}" title="${this.getAttribute('author') || ''}">${
-      this.getAttribute('author') || ''
-    }</a>
-          </div>
+          <a class="blog-card__author" href="${this.getAttribute('author-href') || '#'}" title="${this.getAttribute('author') || ''}">
+            <img src="${this.getAttribute('author-image') || ''}" alt="${this.getAttribute('author') || ''}" class="blog-card__author-image">
+            <span class="blog-card__author-name">${this.getAttribute('author') || ''}</span>
+          </a>
         </div>
       </article>
     `

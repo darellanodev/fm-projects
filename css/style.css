@@ -99,21 +99,30 @@ a.blog-card__title:hover {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  text-decoration: none;
 }
 
 .blog-card__author-image {
   width: 36px;
 }
 
-a.blog-card__author-name {
+.blog-card__author-name {
   font-size: var(--size-text-card);
   font-weight: 800;
   text-decoration: none;
   color: var(--color-gray-950);
+  transition: color 0.2s;
 }
 
-a.blog-card__author-name:hover {
+.blog-card__author:hover .blog-card__author-name,
+.blog-card__author:focus .blog-card__author-name {
   color: var(--background-page);
+  cursor: pointer;
+}
+
+.blog-card__author:hover .blog-card__author-image,
+.blog-card__author:focus .blog-card__author-image {
+  filter: brightness(0.95);
 }
 
 .page__footer {
