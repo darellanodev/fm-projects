@@ -28,7 +28,7 @@ h6 {
   --size-text-title: 1.2rem;
   --size-text-card: 0.7rem;
   --size-text-date: 0.8rem;
-  --size-text-footer: 0.5rem;
+  --size-text-footer: 0.8rem;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
   flex-direction: column;
 }
 
-.page__main {
+main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -138,7 +138,7 @@ a.card__title:hover {
   filter: brightness(0.95);
 }
 
-.page__footer {
+footer {
   background: var(--background-footer);
   color: var(--color-footer-text);
   text-align: center;
@@ -148,11 +148,11 @@ a.card__title:hover {
   justify-content: center;
 }
 
-.page__footer > a {
+footer > a {
   color: var(--color-footer-links);
 }
 
-.page__footer > a:hover {
+footer > a:hover {
   color: var(--color-footer-links-hover);
 }
 
