@@ -14,7 +14,7 @@ h6 {
 }
 
 :root {
-  font-size: 14px; /* Reduced font size */
+  font-size: 14px;
   --background-page: #f4d04e;
   --background-footer: #222;
   --color-footer-text: #fff;
@@ -22,13 +22,13 @@ h6 {
   --background-card: #fff;
   --color-gray-950: #111;
   --color-gray-500: #6b6b6b;
-  --radius-card: 1.2rem; /* Reduced border radius */
-  --padding-card: 1.2rem; /* Reduced padding */
-  --shadow-card: 8px 8px 0px 0px black; /* Reduced shadow */
-  --size-text-title: 1.3rem; /* Reduced title text size */
-  --size-text-card: 0.8rem; /* Reduced card text size */
-  --size-text-date: 0.9rem; /* Reduced date text size */
-  --size-text-footer: 0.6rem; /* Reduced footer text size */
+  --radius-card: 1.2rem;
+  --padding-card: 1.2rem;
+  --shadow-card: 8px 8px 0px 0px black;
+  --size-text-title: 1.3rem;
+  --size-text-card: 0.8rem;
+  --size-text-date: 0.9rem;
+  --size-text-footer: 0.6rem;
 }
 
 body {
