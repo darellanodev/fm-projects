@@ -91,13 +91,15 @@ main {
   margin-top: -0.5rem;
 }
 
-.blog-card__title {
+a.blog-card__title {
+  color: var(--color-gray-950);
+  text-decoration: none;
   letter-spacing: -0.02rem;
   font-size: var(--size-text-title);
   font-weight: 800;
 }
 
-.blog-card__title:hover {
+a.blog-card__title:hover {
   color: var(--background-page);
   cursor: pointer;
 }
