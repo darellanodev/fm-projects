@@ -10,11 +10,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
 }
 
 :root {
   font-size: 14px;
+  --font-family-base: 'Figtree', sans-serif;
+  --font-weight-regular: 500;
+  --font-weight-bold: 800;
+
   --background-page: #f4d04e;
   --background-footer: #222;
   --color-footer-text: #fff;
@@ -22,18 +26,31 @@ h6 {
   --background-card: #fff;
   --color-gray-950: #111;
   --color-gray-500: #6b6b6b;
+
   --radius-card: 1.2rem;
+  --radius-image: 0.7rem;
+  --radius-tag: 0.2rem;
+  --border-width-card: 1px;
+
   --padding-card: 1.2rem;
+  --padding-tag: 0.2rem 0.8rem;
+
   --shadow-card: 8px 8px 0px 0px black;
+
   --size-text-title: 1.3rem;
   --size-text-card: 0.8rem;
   --size-text-date: 0.9rem;
   --size-text-footer: 0.6rem;
+
+  --gap-card-content: 1rem;
+  --gap-author: 0.6rem;
+
+  --max-width-card: 24rem;
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
-  font-weight: 500;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
   line-height: 1.6rem;
   min-height: 100vh;
   margin: 0;
@@ -54,21 +71,21 @@ main {
   background: var(--background-card);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
-  width: min(24rem, 80vw);
+  width: min(var(--max-width-card), 80vw);
   border-style: solid;
-  border-width: 1px;
+  border-width: var(--border-width-card);
 }
 
 .blog-card__content {
   padding: var(--padding-card);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--gap-card-content);
   color: var(--color-gray-950);
 }
 
 .blog-card__image {
-  border-radius: 0.7rem;
+  border-radius: var(--radius-image);
   width: 100%;
 }
 
@@ -80,9 +97,9 @@ main {
 .blog-card__tag {
   display: inline-block;
   background-color: var(--background-page);
-  padding: 0.2rem 0.8rem;
-  border-radius: 0.2rem;
-  font-weight: 800;
+  padding: var(--padding-tag);
+  border-radius: var(--radius-tag);
+  font-weight: var(--font-weight-bold);
   letter-spacing: -0.5px;
 }
 
@@ -91,15 +108,17 @@ main {
   margin-top: -0.5rem;
 }
 
-a.blog-card__title {
+a.blog-card__title,
+.blog-card__title-link {
   color: var(--color-gray-950);
   text-decoration: none;
   letter-spacing: -0.02rem;
   font-size: var(--size-text-title);
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
 }
 
-a.blog-card__title:hover {
+a.blog-card__title:hover,
+.blog-card__title-link:hover {
   color: var(--background-page);
   cursor: pointer;
 }
@@ -113,16 +132,17 @@ a.blog-card__title:hover {
 .blog-card__author {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: var(--gap-author);
 }
 
 .blog-card__author-image {
   width: 30px;
+  border-radius: 50%;
 }
 
 .blog-card__author-name {
   font-size: var(--size-text-card);
-  font-weight: 800;
+  font-weight: var(--font-weight-bold);
 }
 
 footer {
