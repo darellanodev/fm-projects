@@ -57,7 +57,7 @@ I learned that grouping CSS variables by their functionality is a good way to or
 
 ```css
 :root {
-  font-size: 14px;
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
   --font-family-base: 'Figtree', sans-serif;
   --font-weight-regular: 500;
   --font-weight-bold: 800;
@@ -73,24 +73,32 @@ I learned that grouping CSS variables by their functionality is a good way to or
   --radius-card: 1.2rem;
   --radius-image: 0.7rem;
   --radius-tag: 0.2rem;
-  --border-width-card: 1px;
-
-  --padding-card: 1.2rem;
-  --padding-tag: 0.2rem 0.8rem;
-
-  --shadow-card: 8px 8px 0px 0px black;
-
-  --size-text-title: 1.5rem;
-  --size-text-card: 0.9rem;
-  --size-text-date: 0.9rem;
-  --size-text-footer: 0.6rem;
-
-  --gap-card-content: 1rem;
-  --gap-author: 0.6rem;
-
-  --max-width-card: 24rem;
+  --border-width-card: 0.06rem;
 }
 ```
+
+I also learned about using the `clamp` function in CSS for smooth transitions between small and large screen devices.
+
+```css
+footer {
+  background: var(--background-footer);
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+  font-size: var(--size-text-footer);
+}
+```
+
+I also learned about CSS logical properties
+
+```css
+.blog-card__date {
+  font-size: var(--size-text-date);
+  margin-block-start: -0.5rem;
+}
+```
+
+Finally, I also learned that if you follow a mobile-first approach, you must use `min-width` instead of `max-width` for media queries, and then when the viewport increases, the styles can be overridden. However, in this exercise, because I only want to change the text sizes, it is not necessary to use media queries.
 
 ### Continued development
 
