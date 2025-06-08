@@ -27,10 +27,10 @@ h6 {
   --color-gray-950: #111;
   --color-gray-500: #6b6b6b;
 
-  --radius-card: 1.2rem;
-  --radius-image: 0.7rem;
-  --radius-tag: 0.2rem;
-  --border-width-card: 0.06rem;
+  --radius-card: clamp(0.8rem, 2vw, 1.2rem);
+  --radius-image: clamp(0.4rem, 1vw, 0.7rem);
+  --radius-tag: clamp(0.1rem, 0.5vw, 0.2rem);
+  --border-width-card: clamp(0.03rem, 0.2vw, 0.06rem);
 
   --padding-card: clamp(0.8rem, 2vw, 1.2rem);
   --padding-tag-vertical: clamp(0.1rem, 1vw, 0.2rem);
@@ -54,7 +54,7 @@ h6 {
 body {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-regular);
-  line-height: 1.6rem;
+  line-height: clamp(1.2rem, 2vw, 1.6rem);
   min-height: 100vh;
   margin: 0;
   background: var(--background-page);
@@ -107,7 +107,7 @@ article {
 
 .blog-card__date {
   font-size: var(--size-text-date);
-  margin-block-start: -0.5rem;
+  margin-block-start: clamp(-0.3rem, -1vw, -0.5rem);
 }
 
 .blog-card__title,
