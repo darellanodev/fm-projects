@@ -53,7 +53,16 @@ Users should be able to:
 
 ### What I learned
 
-I learned that grouping CSS variables by their functionality is a good way to organize them. For example:
+I learned about using the `clamp` function in CSS for smooth transitions between small and large screen devices.
+
+```css
+:root {
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
+  /* other styles */
+}
+```
+
+I also learned that grouping CSS variables by their functionality is a good way to organize them. For example:
 
 ```css
 :root {
@@ -70,22 +79,7 @@ I learned that grouping CSS variables by their functionality is a good way to or
   --color-gray-950: #111;
   --color-gray-500: #6b6b6b;
 
-  --radius-card: 1.2rem;
-  --radius-image: 0.7rem;
-  --radius-tag: 0.2rem;
-  --border-width-card: 0.06rem;
-}
-```
-
-I also learned about using the `clamp` function in CSS for smooth transitions between small and large screen devices.
-
-```css
-footer {
-  background: var(--background-footer);
-  color: var(--color-footer-text);
-  text-align: center;
-  padding: clamp(0.5rem, 2vw, 1.5rem);
-  font-size: var(--size-text-footer);
+  /* other styles */
 }
 ```
 
@@ -93,8 +87,8 @@ I also learned about CSS logical properties
 
 ```css
 .blog-card__date {
-  font-size: var(--size-text-date);
   margin-block-start: -0.5rem;
+  /* other styles */
 }
 ```
 
