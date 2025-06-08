@@ -14,7 +14,7 @@ h6 {
 }
 
 :root {
-  font-size: 0.6rem;
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
   --font-family-base: 'Figtree', sans-serif;
   --font-weight-regular: 500;
   --font-weight-bold: 800;
@@ -46,12 +46,6 @@ h6 {
   --gap-author: 0.6rem;
 
   --max-width-card: 24rem;
-}
-
-@media (min-width: 23rem) {
-  :root {
-    font-size: 1rem;
-  }
 }
 
 body {
