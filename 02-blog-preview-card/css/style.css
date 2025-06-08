@@ -14,7 +14,7 @@ h6 {
 }
 
 :root {
-  font-size: 14px;
+  font-size: 1rem;
   --font-family-base: 'Figtree', sans-serif;
   --font-weight-regular: 500;
   --font-weight-bold: 800;
@@ -30,12 +30,12 @@ h6 {
   --radius-card: 1.2rem;
   --radius-image: 0.7rem;
   --radius-tag: 0.2rem;
-  --border-width-card: 1px;
+  --border-width-card: 0.06rem;
 
   --padding-card: 1.2rem;
   --padding-tag: 0.2rem 0.8rem;
 
-  --shadow-card: 8px 8px 0px 0px black;
+  --shadow-card: 0.5rem 0.5rem 0rem 0rem black;
 
   --size-text-title: 1.5rem;
   --size-text-card: 0.9rem;
@@ -133,7 +133,7 @@ a.blog-card__title:hover,
 }
 
 .blog-card__author-image {
-  width: 30px;
+  width: 1.8rem;
   border-radius: 50%;
 }
 
@@ -142,9 +142,9 @@ a.blog-card__title:hover,
   font-weight: var(--font-weight-bold);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 23rem) {
   :root {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 }
 
