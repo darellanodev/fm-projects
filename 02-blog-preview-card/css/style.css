@@ -14,7 +14,7 @@ h6 {
 }
 
 :root {
-  font-size: 1rem;
+  font-size: 0.6rem;
   --font-family-base: 'Figtree', sans-serif;
   --font-weight-regular: 500;
   --font-weight-bold: 800;
@@ -46,6 +46,12 @@ h6 {
   --gap-author: 0.6rem;
 
   --max-width-card: 24rem;
+}
+
+@media (min-width: 23rem) {
+  :root {
+    font-size: 1rem;
+  }
 }
 
 body {
@@ -140,12 +146,6 @@ a.blog-card__title:hover,
 .blog-card__author-name {
   font-size: var(--size-text-card);
   font-weight: var(--font-weight-bold);
-}
-
-@media (max-width: 23rem) {
-  :root {
-    font-size: 0.6rem;
-  }
 }
 
 footer {
