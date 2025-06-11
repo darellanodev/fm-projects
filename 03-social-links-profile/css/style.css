@@ -7,20 +7,80 @@
 }
 
 :root {
-  --background-footer: #777;
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --color-links-footer: #888;
+
+  --width-card: 17rem;
+  --heigh-card: 26rem;
+
+  --border-card-radius: 1rem;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-grey-900);
 }
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  background: var(--background-footer);
+  background-color: var(--color-grey-700);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
+footer > a {
+  color: var(--color-links-footer);
+  text-decoration: none;
+}
+
+.profile-card {
+  height: var(--heigh-card);
+  background-color: var(--color-grey-800);
+  width: var(--width-card);
+  border-radius: var(--border-card-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card__name {
+  color: var(--color-white);
+}
+
+.profile-card__avatar {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.profile-card__link {
+  background-color: var(--color-grey-700);
+  padding: 0.8rem;
+  list-style: none;
+}
+
+.profile-card__link a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.profile-card__location {
+  color: var(--color-green);
+}
+
+.profile-card__bio {
+  color: var(--color-white);
+}
