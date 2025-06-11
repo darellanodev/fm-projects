@@ -5,3 +5,22 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --background-footer: #777;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: var(--background-footer);
+}
+
