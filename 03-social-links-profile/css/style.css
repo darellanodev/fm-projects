@@ -18,9 +18,17 @@
   --heigh-card: 26rem;
 
   --border-card-radius: 1rem;
+
+  --font-family-inter: 'Inter', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
+  font-family: var(--font-family-inter);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -59,6 +67,7 @@ footer > a {
 
 .profile-card__name {
   color: var(--color-white);
+  font-weight: var(--font-weight-bold);
 }
 
 .profile-card__avatar {
@@ -77,6 +86,7 @@ footer > a {
   padding: 0.8rem;
   list-style: none;
   border-radius: 0.3rem;
+  font-weight: var(--font-weight-semibold);
 }
 
 .profile-card__link a {
@@ -86,8 +96,10 @@ footer > a {
 
 .profile-card__location {
   color: var(--color-green);
+  font-weight: var(--font-weight-regular);
 }
 
 .profile-card__bio {
   color: var(--color-white);
+  font-weight: var(--font-weight-regular);
 }
