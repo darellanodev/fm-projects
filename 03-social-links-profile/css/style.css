@@ -14,7 +14,7 @@
   --color-grey-900: hsl(0, 0%, 8%);
   --color-links-footer: #888;
 
-  --width-card: 23rem;
+  --width-card: 25rem;
 
   --border-card-radius: 1rem;
 
@@ -81,6 +81,7 @@ footer > a {
   gap: 1rem;
   width: 100%;
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .profile-card__link {
