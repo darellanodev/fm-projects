@@ -45,8 +45,7 @@ main {
 footer {
   background-color: var(--color-grey-700);
   padding: 2rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 footer > a {
