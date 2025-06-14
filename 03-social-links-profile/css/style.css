@@ -67,6 +67,7 @@ footer > a {
 .profile-card__name {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
+  margin-top: 2rem;
 }
 
 .profile-card__avatar {
@@ -77,8 +78,9 @@ footer > a {
 .profile-card__links {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 .profile-card__link {
@@ -97,9 +99,11 @@ footer > a {
 .profile-card__location {
   color: var(--color-green);
   font-weight: var(--font-weight-regular);
+  margin-top: 1rem;
 }
 
 .profile-card__bio {
   color: var(--color-white);
   font-weight: var(--font-weight-regular);
+  margin-top: 2rem;
 }
