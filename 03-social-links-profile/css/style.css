@@ -66,10 +66,17 @@ footer > a {
   width: 5rem;
 }
 
+.profile-card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .profile-card__link {
   background-color: var(--color-grey-700);
   padding: 0.8rem;
   list-style: none;
+  border-radius: 0.3rem;
 }
 
 .profile-card__link a {
