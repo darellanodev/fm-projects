@@ -14,8 +14,7 @@
   --color-grey-900: hsl(0, 0%, 8%);
   --color-links-footer: #888;
 
-  --width-card: 17rem;
-  --heigh-card: 26rem;
+  --width-card: 23rem;
 
   --border-card-radius: 1rem;
 
@@ -56,13 +55,13 @@ footer > a {
 }
 
 .profile-card {
-  height: var(--heigh-card);
   background-color: var(--color-grey-800);
   width: var(--width-card);
   border-radius: var(--border-card-radius);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 .profile-card__name {
@@ -79,6 +78,7 @@ footer > a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .profile-card__link {
