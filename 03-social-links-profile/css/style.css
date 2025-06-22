@@ -7,6 +7,7 @@
 }
 
 :root {
+  /* Colors */
   --color-green: hsl(75, 94%, 57%);
   --color-white: hsl(0, 0%, 100%);
   --color-grey-700: hsl(0, 0%, 20%);
@@ -14,28 +15,42 @@
   --color-grey-900: hsl(0, 0%, 8%);
   --color-links-footer: #888;
 
-  --width-card: 25rem;
-
+  /* Card sizing */
+  --width-card: clamp(16rem, 90vw, 25rem);
   --border-card-radius: 1rem;
+  --padding-card: clamp(1rem, 5vw, 2rem);
 
+  /* Typography */
   --font-family-inter: 'Inter', sans-serif;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-size-body: clamp(1rem, 2.5vw, 1.13rem);
+  --font-size-name: clamp(1.2rem, 4vw, 1.5rem);
 
-  --padding-footer: 2rem;
-  --padding-card: 2rem;
-  --margin-top-name: 2rem;
-  --margin-top-avatar: 2rem;
-  --margin-top-links: 1.5rem;
-  --margin-top-location: 1rem;
-  --margin-top-bio: 2rem;
+  /* Avatar */
+  --avatar-size: clamp(3.5rem, 15vw, 5rem);
+
+  /* Spacing */
+  --padding-footer: clamp(1rem, 4vw, 2rem);
+  --margin-top-name: clamp(1rem, 3vw, 2rem);
+  --margin-top-avatar: clamp(1rem, 4vw, 2rem);
+  --margin-top-links: clamp(1rem, 4vw, 1.5rem);
+  --margin-top-location: clamp(0.7rem, 2vw, 1rem);
+  --margin-top-bio: clamp(1rem, 4vw, 2rem);
+
+  /* Links */
+  --links-gap: 1rem;
+  --link-padding: 0.8rem;
+  --link-border-radius: 0.3rem;
+  --link-transition: background-color 0.2s, color 0.2s;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
   font-family: var(--font-family-inter);
+  font-size: var(--font-size-body);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -75,18 +90,19 @@ footer > a {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
   margin-top: var(--margin-top-name);
+  font-size: var(--font-size-name);
 }
 
 .profile-card__avatar {
   border-radius: 50%;
-  width: 5rem;
+  width: var(--avatar-size);
   margin-top: var(--margin-top-avatar);
 }
 
 .profile-card__links {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--links-gap);
   width: 100%;
   margin-top: var(--margin-top-links);
   text-align: center;
@@ -102,11 +118,10 @@ footer > a {
   background-color: var(--color-grey-700);
   color: var(--color-white);
   text-decoration: none;
-  padding: 0.8rem;
-  list-style: none;
-  border-radius: 0.3rem;
+  padding: var(--link-padding);
+  border-radius: var(--link-border-radius);
   font-weight: var(--font-weight-semibold);
-  transition: background-color 0.2s, color 0.2s;
+  transition: var(--link-transition);
 }
 
 .profile-card__link:hover,
