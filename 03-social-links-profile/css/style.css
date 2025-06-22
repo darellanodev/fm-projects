@@ -22,6 +22,14 @@
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+
+  --padding-footer: 2rem;
+  --padding-card: 2rem;
+  --margin-top-name: 2rem;
+  --margin-top-avatar: 2rem;
+  --margin-top-links: 1.5rem;
+  --margin-top-location: 1rem;
+  --margin-top-bio: 2rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -44,7 +52,7 @@ main {
 
 footer {
   background-color: var(--color-grey-700);
-  padding: 2rem;
+  padding: var(--padding-footer);
   text-align: center;
 }
 
@@ -60,18 +68,19 @@ footer > a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: var(--padding-card);
 }
 
 .profile-card__name {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
-  margin-top: 2rem;
+  margin-top: var(--margin-top-name);
 }
 
 .profile-card__avatar {
   border-radius: 50%;
   width: 5rem;
+  margin-top: var(--margin-top-avatar);
 }
 
 .profile-card__links {
@@ -79,7 +88,7 @@ footer > a {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: var(--margin-top-links);
   text-align: center;
 }
 
@@ -99,11 +108,11 @@ footer > a {
 .profile-card__location {
   color: var(--color-green);
   font-weight: var(--font-weight-regular);
-  margin-top: 1rem;
+  margin-top: var(--margin-top-location);
 }
 
 .profile-card__bio {
   color: var(--color-white);
   font-weight: var(--font-weight-regular);
-  margin-top: 2rem;
+  margin-top: var(--margin-top-bio);
 }
