@@ -108,7 +108,7 @@ footer > a {
   text-align: center;
 }
 
-.profile-card__links li {
+.profile-card__links > li {
   list-style: none;
 }
 
