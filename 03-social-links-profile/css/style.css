@@ -92,17 +92,28 @@ footer > a {
   text-align: center;
 }
 
+.profile-card__links li {
+  list-style: none;
+}
+
 .profile-card__link {
+  display: block;
+  width: 100%;
   background-color: var(--color-grey-700);
+  color: var(--color-white);
+  text-decoration: none;
   padding: 0.8rem;
   list-style: none;
   border-radius: 0.3rem;
   font-weight: var(--font-weight-semibold);
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.profile-card__link a {
-  color: var(--color-white);
-  text-decoration: none;
+.profile-card__link:hover,
+.profile-card__link:focus {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+  outline: none;
 }
 
 .profile-card__location {
