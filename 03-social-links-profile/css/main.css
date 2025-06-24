@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-200: hsl(0, 0%, 80%);
+  --color-grey-500: hsl(0, 0%, 50%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --width-card: clamp(12rem, 80vw, 20rem);
+  --border-card-radius: 0.7rem;
+  --padding-card: clamp(0.7rem, 3.5vw, 1.4rem);
+  --font-family-inter: Inter, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-body: clamp(0.8rem, 1.8vw, 0.9rem);
+  --font-size-name: clamp(0.9rem, 2.5vw, 1.2rem);
+  --font-size-footer: clamp(0.6rem, 1.8vw, 0.8rem);
+  --avatar-size: clamp(2.5rem, 11vw, 4rem);
+  --padding-footer: clamp(0.3rem, 1.2vw, 0.6rem);
+  --margin-top-name: clamp(0.7rem, 2.2vw, 1.4rem);
+  --margin-top-links: clamp(0.7rem, 2.5vw, 1rem);
+  --margin-top-location: clamp(0.5rem, 1.2vw, 0.7rem);
+  --margin-top-bio: clamp(0.7rem, 2.5vw, 1.4rem);
+  --links-gap: 0.7rem;
+  --link-padding: 0.5rem;
+  --link-border-radius: 0.2rem;
+  --link-background-transition: background-color 0.2s, color 0.2s;
+  --link-color-transition: color 0.2s;
+}
+
 *,
 *::before,
 *::after {
@@ -6,53 +38,12 @@
   padding: 0;
 }
 
-:root {
-  /* Colors */
-  --color-green: hsl(75, 94%, 57%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-grey-200: hsl(0, 0%, 80%);
-  --color-grey-500: hsl(0, 0%, 50%);
-  --color-grey-700: hsl(0, 0%, 20%);
-  --color-grey-800: hsl(0, 0%, 12%);
-  --color-grey-900: hsl(0, 0%, 8%);
-
-  /* Card sizing */
-  --width-card: clamp(12rem, 80vw, 20rem);
-  --border-card-radius: 0.7rem;
-  --padding-card: clamp(0.7rem, 3.5vw, 1.4rem);
-
-  /* Typography */
-  --font-family-inter: 'Inter', sans-serif;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-size-body: clamp(0.8rem, 1.8vw, 0.9rem);
-  --font-size-name: clamp(0.9rem, 2.5vw, 1.2rem);
-  --font-size-footer: clamp(0.6rem, 1.8vw, 0.8rem);
-
-  /* Avatar */
-  --avatar-size: clamp(2.5rem, 11vw, 4rem);
-
-  /* Spacing */
-  --padding-footer: clamp(0.3rem, 1.2vw, 0.6rem);
-  --margin-top-name: clamp(0.7rem, 2.2vw, 1.4rem);
-  --margin-top-links: clamp(0.7rem, 2.5vw, 1rem);
-  --margin-top-location: clamp(0.5rem, 1.2vw, 0.7rem);
-  --margin-top-bio: clamp(0.7rem, 2.5vw, 1.4rem);
-
-  /* Links */
-  --links-gap: 0.7rem;
-  --link-padding: 0.5rem;
-  --link-border-radius: 0.2rem;
-  --link-background-transition: background-color 0.2s, color 0.2s;
-  --link-color-transition: color 0.2s;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
 body {
   font-family: var(--font-family-inter);
   font-size: var(--font-size-body);
+}
+
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -74,15 +65,12 @@ footer {
   font-size: var(--font-size-footer);
   color: var(--color-grey-500);
 }
-
 footer > a {
   color: var(--color-grey-200);
   text-decoration: none;
   transition: var(--link-color-transition);
 }
-
-footer > a:hover,
-footer > a:focus {
+footer > a:hover, footer > a:focus {
   color: var(--color-green);
   outline: none;
 }
@@ -96,19 +84,16 @@ footer > a:focus {
   align-items: center;
   padding: var(--padding-card);
 }
-
 .profile-card__name {
   color: var(--color-white);
   font-weight: var(--font-weight-bold);
   margin-top: var(--margin-top-name);
   font-size: var(--font-size-name);
 }
-
 .profile-card__avatar {
   border-radius: 50%;
   width: var(--avatar-size);
 }
-
 .profile-card__links {
   display: flex;
   flex-direction: column;
@@ -117,11 +102,9 @@ footer > a:focus {
   margin-top: var(--margin-top-links);
   text-align: center;
 }
-
 .profile-card__links > li {
   list-style: none;
 }
-
 .profile-card__link {
   display: block;
   width: 100%;
@@ -133,22 +116,20 @@ footer > a:focus {
   font-weight: var(--font-weight-semibold);
   transition: var(--link-background-transition);
 }
-
-.profile-card__link:hover,
-.profile-card__link:focus {
+.profile-card__link:hover, .profile-card__link:focus {
   background-color: var(--color-green);
   color: var(--color-grey-900);
   outline: none;
 }
-
 .profile-card__location {
   color: var(--color-green);
   font-weight: var(--font-weight-regular);
   margin-top: var(--margin-top-location);
 }
-
 .profile-card__bio {
   color: var(--color-white);
   font-weight: var(--font-weight-regular);
   margin-top: var(--margin-top-bio);
 }
+
+/*# sourceMappingURL=main.css.map */

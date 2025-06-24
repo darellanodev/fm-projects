@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-grey-900);
+}
+
+main {
+  flex: 1;
+  @include flex-center;
+}
+
+footer {
+  background-color: var(--color-grey-700);
+  padding: var(--padding-footer);
+  text-align: center;
+  font-size: var(--font-size-footer);
+  color: var(--color-grey-500);
+
+  > a {
+    color: var(--color-grey-200);
+    text-decoration: none;
+    transition: var(--link-color-transition);
+
+    &:hover,
+    &:focus {
+      color: var(--color-green);
+      outline: none;
+    }
+  }
+}
