@@ -50,53 +50,22 @@ Users should be able to:
   (Descriptive `alt` attributes for images and secure links with `rel="noopener"`)
 - **Google Fonts**  
   (Loading and using the "Inter" font from Google Fonts)
+- **Sass (SCSS syntax)**
+  (Using mixins, variables, and modular files to write more efficient and modular CSS)
 
 ### What I learned
 
-I learned about using the `clamp` function in CSS for smooth transitions between small and large screen devices.
+In this third project I learned about SASS (SCSS Syntax)
 
-```css
-:root {
-  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
-  /* other styles */
-}
-```
+I used a combination of SCSS variables and CSS variables because they offer flexibility and maintainability in styling.
 
-I also learned that grouping CSS variables by their functionality is a good way to organize them. For example:
+Additionally, I utilized multiple SCSS files to enhance modularity.
 
-```css
-:root {
-  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
-  --font-family-base: 'Figtree', sans-serif;
-  --font-weight-regular: 500;
-  --font-weight-bold: 800;
-
-  --background-page: #f4d04e;
-  --background-footer: #222;
-  --color-footer-text: #fff;
-  --color-footer-links: #777;
-  --background-card: #fff;
-  --color-gray-950: #111;
-  --color-gray-500: #6b6b6b;
-
-  /* other styles */
-}
-```
-
-I also learned about CSS logical properties
-
-```css
-.blog-card__date {
-  margin-block-start: -0.5rem;
-  /* other styles */
-}
-```
-
-Finally, I also learned that if you follow a mobile-first approach, you must use `min-width` instead of `max-width` for media queries, and then when the viewport increases, the styles can be overridden. However, in this exercise, because I only want to change the text sizes, it is not necessary to use media queries.
+Finally, I took advantage of mixins to write more efficient and DRY SCSS code, utilizing the new syntax to import files with namespaces, which has replaced the deprecated `@import` rule.
 
 ### Continued development
 
-I'd like to focus on mobile-first development and continue learning about best practices.
+I'd like to continue learning about best practices and cool front-end technologies, such as PWA's, accessibility, and new CSS features.
 
 ### Useful resources
 
