@@ -1,93 +1,108 @@
-# Frontend Mentor - Social links profile
+# Frontend Mentor - Social links profile solution
 
-![Design preview for the Social links profile coding challenge](./preview.jpg)
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor - Social links profile solution](#frontend-mentor---social-links-profile-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this social links profile and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
+Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Screenshot](./screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Built with
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+- **Semantic HTML5 markup**  
+  (Using semantic tags like `<main>`, `<article>`, `<footer>`)
+- **CSS custom properties (variables)**  
+  (Centralized color palette, sizes, border radii, and fonts in `:root`)
+- **Flexbox**  
+  (For layout structure and vertical/horizontal centering)
+- **BEM-inspired class naming**  
+  (Classes like `.card__image`, `.card__content` for clarity and maintainability)
+- **Accessibility best practices**  
+  (Descriptive `alt` attributes for images and secure links with `rel="noopener"`)
+- **Google Fonts**  
+  (Loading and using the "Inter" font from Google Fonts)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### What I learned
 
-## Building your project
+I learned about using the `clamp` function in CSS for smooth transitions between small and large screen devices.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+```css
+:root {
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
+  /* other styles */
+}
+```
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I also learned that grouping CSS variables by their functionality is a good way to organize them. For example:
 
-## Deploying your project
+```css
+:root {
+  font-size: clamp(0.6rem, 2vw + 0.5rem, 1rem);
+  --font-family-base: 'Figtree', sans-serif;
+  --font-weight-regular: 500;
+  --font-weight-bold: 800;
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+  --background-page: #f4d04e;
+  --background-footer: #222;
+  --color-footer-text: #fff;
+  --color-footer-links: #777;
+  --background-card: #fff;
+  --color-gray-950: #111;
+  --color-gray-500: #6b6b6b;
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+  /* other styles */
+}
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+I also learned about CSS logical properties
 
-## Create a custom `README.md`
+```css
+.blog-card__date {
+  margin-block-start: -0.5rem;
+  /* other styles */
+}
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Finally, I also learned that if you follow a mobile-first approach, you must use `min-width` instead of `max-width` for media queries, and then when the viewport increases, the styles can be overridden. However, in this exercise, because I only want to change the text sizes, it is not necessary to use media queries.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Continued development
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+I'd like to focus on mobile-first development and continue learning about best practices.
 
-## Submitting your solution
+### Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+I used the [Perplexity AI](https://www.perplexity.ai/) tool and the [Windsurf](https://marketplace.visualstudio.com/items?itemName=Waka.windsurf) VSCode extension to help me review my code as I was building the project. I also used them to get suggestions on best practices, accessibility, and code organization. As a Spanish speaker, I sometimes use these tools to correct or improve my English sentences. I found their feedback and explanations very helpful, and I will use them in future projects.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Author
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Website - [darellanodev](https://darellanodev.github.io/)
+- Frontend Mentor - [@darellanodev](https://www.frontendmentor.io/profile/darellanodev)
