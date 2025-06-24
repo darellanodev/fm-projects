@@ -16,33 +16,33 @@
   --color-links-footer: #888;
 
   /* Card sizing */
-  --width-card: clamp(16rem, 90vw, 25rem);
-  --border-card-radius: 1rem;
-  --padding-card: clamp(1rem, 5vw, 2rem);
+  --width-card: clamp(12rem, 80vw, 20rem);
+  --border-card-radius: 0.7rem;
+  --padding-card: clamp(0.7rem, 3.5vw, 1.4rem);
 
   /* Typography */
   --font-family-inter: 'Inter', sans-serif;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --font-size-body: clamp(1rem, 2.5vw, 1.13rem);
-  --font-size-name: clamp(1.2rem, 4vw, 1.5rem);
+  --font-size-body: clamp(0.8rem, 1.8vw, 0.9rem);
+  --font-size-name: clamp(0.9rem, 2.5vw, 1.2rem);
 
   /* Avatar */
-  --avatar-size: clamp(3.5rem, 15vw, 5rem);
+  --avatar-size: clamp(2.5rem, 11vw, 4rem);
 
   /* Spacing */
-  --padding-footer: clamp(1rem, 4vw, 2rem);
-  --margin-top-name: clamp(1rem, 3vw, 2rem);
-  --margin-top-avatar: clamp(1rem, 4vw, 2rem);
-  --margin-top-links: clamp(1rem, 4vw, 1.5rem);
-  --margin-top-location: clamp(0.7rem, 2vw, 1rem);
-  --margin-top-bio: clamp(1rem, 4vw, 2rem);
+  --padding-footer: clamp(0.7rem, 2.5vw, 1.4rem);
+  --margin-top-name: clamp(0.7rem, 2.2vw, 1.4rem);
+  --margin-top-avatar: clamp(0.7rem, 2.5vw, 1.4rem);
+  --margin-top-links: clamp(0.7rem, 2.5vw, 1rem);
+  --margin-top-location: clamp(0.5rem, 1.2vw, 0.7rem);
+  --margin-top-bio: clamp(0.7rem, 2.5vw, 1.4rem);
 
   /* Links */
-  --links-gap: 1rem;
-  --link-padding: 0.8rem;
-  --link-border-radius: 0.3rem;
+  --links-gap: 0.7rem;
+  --link-padding: 0.5rem;
+  --link-border-radius: 0.2rem;
   --link-transition: background-color 0.2s, color 0.2s;
 }
 
