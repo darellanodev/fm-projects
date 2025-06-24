@@ -10,10 +10,11 @@
   /* Colors */
   --color-green: hsl(75, 94%, 57%);
   --color-white: hsl(0, 0%, 100%);
+  --color-grey-200: hsl(0, 0%, 80%);
+  --color-grey-500: hsl(0, 0%, 50%);
   --color-grey-700: hsl(0, 0%, 20%);
   --color-grey-800: hsl(0, 0%, 12%);
   --color-grey-900: hsl(0, 0%, 8%);
-  --color-links-footer: #888;
 
   /* Card sizing */
   --width-card: clamp(12rem, 80vw, 20rem);
@@ -27,12 +28,13 @@
   --font-weight-bold: 700;
   --font-size-body: clamp(0.8rem, 1.8vw, 0.9rem);
   --font-size-name: clamp(0.9rem, 2.5vw, 1.2rem);
+  --font-size-footer: clamp(0.6rem, 1.8vw, 0.8rem);
 
   /* Avatar */
   --avatar-size: clamp(2.5rem, 11vw, 4rem);
 
   /* Spacing */
-  --padding-footer: clamp(0.7rem, 2.5vw, 1.4rem);
+  --padding-footer: clamp(0.3rem, 1.2vw, 0.6rem);
   --margin-top-name: clamp(0.7rem, 2.2vw, 1.4rem);
   --margin-top-avatar: clamp(0.7rem, 2.5vw, 1.4rem);
   --margin-top-links: clamp(0.7rem, 2.5vw, 1rem);
@@ -43,7 +45,8 @@
   --links-gap: 0.7rem;
   --link-padding: 0.5rem;
   --link-border-radius: 0.2rem;
-  --link-transition: background-color 0.2s, color 0.2s;
+  --link-background-transition: background-color 0.2s, color 0.2s;
+  --link-color-transition: color 0.2s;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -69,11 +72,20 @@ footer {
   background-color: var(--color-grey-700);
   padding: var(--padding-footer);
   text-align: center;
+  font-size: var(--font-size-footer);
+  color: var(--color-grey-500);
 }
 
 footer > a {
-  color: var(--color-links-footer);
+  color: var(--color-grey-200);
   text-decoration: none;
+  transition: var(--link-color-transition);
+}
+
+footer > a:hover,
+footer > a:focus {
+  color: var(--color-green);
+  outline: none;
 }
 
 .profile-card {
@@ -121,7 +133,7 @@ footer > a {
   padding: var(--link-padding);
   border-radius: var(--link-border-radius);
   font-weight: var(--font-weight-semibold);
-  transition: var(--link-transition);
+  transition: var(--link-background-transition);
 }
 
 .profile-card__link:hover,
