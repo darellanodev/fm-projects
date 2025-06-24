@@ -36,7 +36,6 @@
   /* Spacing */
   --padding-footer: clamp(0.3rem, 1.2vw, 0.6rem);
   --margin-top-name: clamp(0.7rem, 2.2vw, 1.4rem);
-  --margin-top-avatar: clamp(0.7rem, 2.5vw, 1.4rem);
   --margin-top-links: clamp(0.7rem, 2.5vw, 1rem);
   --margin-top-location: clamp(0.5rem, 1.2vw, 0.7rem);
   --margin-top-bio: clamp(0.7rem, 2.5vw, 1.4rem);
@@ -108,7 +107,6 @@ footer > a:focus {
 .profile-card__avatar {
   border-radius: 50%;
   width: var(--avatar-size);
-  margin-top: var(--margin-top-avatar);
 }
 
 .profile-card__links {
