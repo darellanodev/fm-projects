@@ -1,4 +1,7 @@
 {
+  "name": "social-links-profile",
+  "version": "1.0.0",
+  "description": "This is a Frontend Mentor exercise about a Social links profile",
   "devDependencies": {
     "sass": "^1.89.2"
   },
