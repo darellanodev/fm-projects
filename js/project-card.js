@@ -16,9 +16,9 @@ class Card extends HTMLElement {
           <div class="card__description">
             ${this.getAttribute('description') || ''}
           </div>
-          <a class="card__author" href="${this.getAttribute('author-href') || '#'}" title="${this.getAttribute('author') || ''}">
-            <img src="${this.getAttribute('author-image') || ''}" alt="${this.getAttribute('author') || ''}" class="card__author-image">
-            <span class="card__author-name">${this.getAttribute('author') || ''}</span>
+          <a class="card__author" href="http://darellanodev.github.io/" title="Darellanodev">
+            <img src="./img/darellanodev_avatar.webp" alt="Darellanodev" class="card__author-image">
+            <span class="card__author-name">Darellanodev</span>
           </a>
         </div>
       </article>
