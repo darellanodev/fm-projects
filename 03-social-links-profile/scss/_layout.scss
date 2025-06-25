@@ -23,6 +23,7 @@ footer {
     color: var(--color-grey-200);
     text-decoration: none;
     transition: var(--link-color-transition);
+    text-decoration: underline;
 
     &:hover,
     &:focus {
