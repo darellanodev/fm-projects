@@ -17,10 +17,11 @@ footer {
   padding: var(--padding-footer);
   text-align: center;
   font-size: var(--font-size-footer);
-  color: var(--color-grey-500);
+  color: var(--color-grey-200);
 
   > a {
-    color: var(--color-grey-200);
+    color: var(--color-white);
+    font-weight: bold;
     text-decoration: none;
     transition: var(--link-color-transition);
     text-decoration: underline;
