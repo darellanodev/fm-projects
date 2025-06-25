@@ -55,7 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-In this third project I learned about SASS (SCSS Syntax)
+In this third project I learned about Sass (SCSS Syntax)
 
 I used a combination of SCSS variables and CSS variables because they offer flexibility and maintainability in styling.
 
