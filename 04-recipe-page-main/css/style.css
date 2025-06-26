@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+:root {
+  --radius-card: 1rem;
+  --padding-card: 1.7rem;
+  --width-card: 22rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -23,10 +29,10 @@ main {
 }
 
 article {
-  width: 22rem;
+  width: var(--width-card);
   background-color: white;
-  border-radius: 1rem;
-  padding: 1.7rem;
+  border-radius: var(--radius-card);
+  padding: var(--padding-card);
 }
 
 footer {
