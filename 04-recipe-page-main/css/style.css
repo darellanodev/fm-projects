@@ -14,3 +14,21 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+article {
+  width: 22rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.7rem;
+}
+
+footer {
+  background-color: lightgray;
+}
