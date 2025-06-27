@@ -119,3 +119,18 @@ hr {
   height: 1px;
   border: none;
 }
+
+.preparation-time {
+  margin-top: 2rem;
+  background-color: var(--color-rose-50);
+  padding: 2rem;
+  border-radius: 0.7rem;
+}
+
+.preparation-time > h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--color-rose-800);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
