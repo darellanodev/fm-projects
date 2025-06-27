@@ -38,6 +38,7 @@ body {
   font-family: var(--font-primary);
   font-weight: 400;
   color: var(--color-stone-600);
+  background-color: var(--color-stone-100);
 }
 
 h1,
@@ -78,7 +79,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-stone-100);
 }
 
 article {
@@ -89,9 +89,10 @@ article {
 }
 
 footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   color: var(--color-stone-900);
   text-align: center;
-  background-color: var(--color-stone-150);
 }
 
 footer > a {
