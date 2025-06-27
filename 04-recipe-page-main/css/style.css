@@ -7,6 +7,10 @@
 }
 
 :root {
+  /* fonts */
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Young Serif', serif;
+
   /* colors */
   --color-white: hsl(0, 0%, 100%);
   --color-stone-100: hsl(30, 54%, 90%);
@@ -22,6 +26,16 @@
   --padding-card: 1.7rem;
   --width-card: 22rem;
   --radius-image: 0.7rem;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 main {
