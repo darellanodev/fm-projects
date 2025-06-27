@@ -22,22 +22,20 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   /* spacing & sizing */
-  --padding-list: 1rem;
-  --margin-list: 1.8rem;
-  --margin-top-header-section: 1.5rem;
-  --margin-bottom-header-section: 1.5rem;
-  --margin-top-line: 2rem;
-  --margin-bottom-list-item: 0.8rem;
+  --spacing-xs: 0.8rem;
+  --spacing-s: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-md-lg: 1.7rem;
+  --spacing-list: 1.8rem;
   --spacing-lg: 2rem;
+
   --radius-card: 1rem;
   --radius-md: 0.7rem;
-  --padding-card: 1.7rem;
-  --padding-table: 1rem;
+  --padding-table: var(--spacing-s);
   --width-card: 40rem;
-  --padding-lg: 2rem;
-  --margin-bottom-prep-title: 0.9rem;
 
-  /* typography */
+  /* preparation time */
+  --margin-bottom-prep-title: 0.9rem;
   --font-size-prep-title: 1.1rem;
   --font-weight-semibold: 600;
 }
@@ -51,8 +49,8 @@ body {
 
 h1,
 h2 {
-  margin-top: var(--margin-top-header-section);
-  margin-bottom: var(--margin-bottom-header-section);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 h1 {
@@ -70,13 +68,13 @@ h2 {
 
 ul li,
 ol li {
-  padding-left: var(--padding-list);
-  margin-bottom: var(--margin-bottom-list-item);
+  padding-left: var(--spacing-s);
+  margin-bottom: var(--spacing-xs);
 }
 
 section > ol,
 section > ul {
-  margin-left: var(--margin-list);
+  margin-left: var(--spacing-list);
 }
 
 section > ol > li::marker {
@@ -93,7 +91,7 @@ article {
   width: var(--width-card);
   background-color: var(--color-white);
   border-radius: var(--radius-card);
-  padding: var(--padding-card);
+  padding: var(--spacing-md-lg);
 }
 
 footer {
@@ -133,7 +131,7 @@ hr {
 .preparation-time {
   margin-top: var(--spacing-lg);
   background-color: var(--color-rose-50);
-  padding: var(--padding-lg);
+  padding: var(--spacing-lg);
   border-radius: var(--radius-md);
 }
 
