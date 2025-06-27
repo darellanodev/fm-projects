@@ -37,6 +37,7 @@
 body {
   font-family: var(--font-primary);
   font-weight: 400;
+  color: var(--color-stone-600);
 }
 
 h1,
@@ -48,6 +49,8 @@ h2 {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--color-stone-900);
 }
 
 h2 {
