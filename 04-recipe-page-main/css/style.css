@@ -23,7 +23,7 @@
 
   /* other */
   --padding-list: 1rem;
-  --margin-list: 1.5rem;
+  --margin-list: 1.8rem;
   --margin-top-header-section: 1.5rem;
   --margin-bottom-header-section: 1.5rem;
   --margin-top-line: 2rem;
@@ -130,7 +130,7 @@ hr {
 
 .preparation-time > h2 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.9rem;
   color: var(--color-rose-800);
   font-size: 1.1rem;
   font-weight: 600;
