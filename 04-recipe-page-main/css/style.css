@@ -22,6 +22,7 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   /* other */
+  --margin-list: 1.5rem;
   --radius-card: 1rem;
   --padding-card: 1.7rem;
   --width-card: 22rem;
@@ -36,6 +37,22 @@ body {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  margin-top: 1.2rem;
+  color: var(--color-brown-800);
+}
+
+section > ol,
+section > ul {
+  margin-left: var(--margin-list);
+}
+
+section > ol > li::marker {
+  color: var(--color-brown-800);
 }
 
 main {
