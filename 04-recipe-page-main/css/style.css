@@ -62,6 +62,7 @@ h2 {
 ul li,
 ol li {
   padding-left: var(--padding-list);
+  margin-bottom: 0.8rem;
 }
 
 section > ol,
