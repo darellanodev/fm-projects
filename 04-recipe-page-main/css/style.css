@@ -25,7 +25,8 @@
   --margin-list: 1.5rem;
   --radius-card: 1rem;
   --padding-card: 1.7rem;
-  --width-card: 22rem;
+  --padding-table: 1rem;
+  --width-card: 40rem;
   --radius-image: 0.7rem;
 }
 
@@ -82,4 +83,15 @@ footer > a {
 article > img {
   width: 100%;
   border-radius: var(--radius-image);
+}
+
+section > table {
+  width: 100%;
+  color: var(--color-brown-800);
+  font-weight: 700;
+}
+
+section > table td {
+  border-bottom: 1px solid var(--color-stone-150);
+  padding: var(--padding-table);
 }
