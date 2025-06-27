@@ -46,3 +46,7 @@ footer {
 footer > a {
   color: var(--color-rose-800);
 }
+
+article > img {
+  width: 100%;
+}
