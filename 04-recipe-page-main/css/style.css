@@ -21,6 +21,7 @@
   --radius-card: 1rem;
   --padding-card: 1.7rem;
   --width-card: 22rem;
+  --radius-image: 0.7rem;
 }
 
 main {
@@ -49,4 +50,5 @@ footer > a {
 
 article > img {
   width: 100%;
+  border-radius: var(--radius-image);
 }
