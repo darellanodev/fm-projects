@@ -22,6 +22,7 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   /* other */
+  --padding-list: 1rem;
   --margin-list: 1.5rem;
   --margin-top-header-section: 1.5rem;
   --margin-bottom-header-section: 1.5rem;
@@ -49,6 +50,11 @@ h2 {
   margin-top: var(--margin-top-header-section);
   margin-bottom: var(--margin-bottom-header-section);
   color: var(--color-brown-800);
+}
+
+ul li,
+ol li {
+  padding-left: var(--padding-list);
 }
 
 section > ol,
