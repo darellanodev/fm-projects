@@ -23,6 +23,7 @@
 
   /* other */
   --margin-list: 1.5rem;
+  --margin-top-line: 2rem;
   --radius-card: 1rem;
   --padding-card: 1.7rem;
   --padding-table: 1rem;
@@ -94,4 +95,11 @@ section > table {
 section > table td {
   border-bottom: 1px solid var(--color-stone-150);
   padding: var(--padding-table);
+}
+
+hr {
+  margin-top: var(--margin-top-line);
+  background-color: var(--color-stone-150);
+  height: 1px;
+  border: none;
 }
