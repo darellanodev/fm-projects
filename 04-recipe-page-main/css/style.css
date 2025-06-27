@@ -42,6 +42,8 @@ body {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
+  margin-top: var(--margin-top-header-section);
+  margin-bottom: var(--margin-bottom-header-section);
 }
 
 h2 {
