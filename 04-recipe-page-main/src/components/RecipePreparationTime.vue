@@ -17,4 +17,8 @@
   padding: var(--spacing-md);
   border-radius: var(--radius-md);
 }
+
+.recipe-card__preparation > h2 {
+  margin-top: 0;
+}
 </style>
