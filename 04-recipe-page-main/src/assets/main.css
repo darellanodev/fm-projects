@@ -33,11 +33,6 @@
   --radius-md: 0.7rem;
   --padding-table: var(--spacing-s);
   --width-card: 45rem;
-
-  /* preparation time */
-  --margin-bottom-prep-title: 0.9rem;
-  --font-size-prep-title: 1.1rem;
-  --font-weight-semibold: 600;
 }
 
 body {
@@ -126,19 +121,4 @@ hr {
   background-color: var(--color-stone-150);
   height: 1px;
   border: none;
-}
-
-.preparation-time {
-  margin-top: var(--spacing-lg);
-  background-color: var(--color-rose-50);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-md);
-}
-
-.preparation-time > h2 {
-  margin-top: 0;
-  margin-bottom: var(--margin-bottom-prep-title);
-  color: var(--color-rose-800);
-  font-size: var(--font-size-prep-title);
-  font-weight: var(--font-weight-semibold);
 }

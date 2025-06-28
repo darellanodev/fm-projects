@@ -8,7 +8,7 @@
       <li>1 tablespoon of butter or oil</li>
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
-    <hr class="recipe-card__divider" />
+    <hr />
   </section>
 </template>
 
@@ -18,10 +18,5 @@
 .recipe-card__ingredient-list {
   padding-left: 1.2em;
   margin: 0 0 var(--spacing-md) 0;
-}
-.recipe-card__divider {
-  border: none;
-  border-top: 1px solid var(--color-border);
-  margin: var(--spacing-md) 0 0 0;
 }
 </style>

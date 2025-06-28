@@ -25,7 +25,7 @@
       </li>
       <li><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</li>
     </ol>
-    <hr class="recipe-card__divider" />
+    <hr />
   </section>
 </template>
 
@@ -34,6 +34,6 @@
 <style scoped>
 .recipe-card__instruction-list {
   padding-left: 1.2em;
-  margin: 0 0 var(--spacing-md) 0;
+  margin-left: 0;
 }
 </style>

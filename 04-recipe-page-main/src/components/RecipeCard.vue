@@ -18,6 +18,4 @@ import RecipeInstructions from './RecipeInstructions.vue'
 import RecipeNutrition from './RecipeNutrition.vue'
 </script>
 
-<style scoped>
-/* CSS variables and BEM styles here */
-</style>
+<style scoped></style>

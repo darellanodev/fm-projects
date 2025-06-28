@@ -9,10 +9,10 @@
   </header>
 </template>
 
-<script setup>
-// logic here
-</script>
+<script setup></script>
 
 <style scoped>
-/* Variables and BEM styles */
+.recipe-card__header > img {
+  width: 100%;
+}
 </style>

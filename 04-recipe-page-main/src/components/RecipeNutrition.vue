@@ -34,8 +34,7 @@
   margin-top: var(--spacing-md);
 }
 .recipe-card__nutrition-table td {
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-stone-100);
 }
 .recipe-card__nutrition-table tr:last-child td {
   border-bottom: none;
