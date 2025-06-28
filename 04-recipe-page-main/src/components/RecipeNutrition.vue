@@ -1,6 +1,6 @@
 <template>
-  <section class="recipe-card__nutrition">
-    <h2 class="recipe-card__subtitle">Nutrition</h2>
+  <section>
+    <h2>Nutrition</h2>
     <p>The table below shows nutritional values per serving without the additional fillings.</p>
     <table class="recipe-card__nutrition-table">
       <tbody>

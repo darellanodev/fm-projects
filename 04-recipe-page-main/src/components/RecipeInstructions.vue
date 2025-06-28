@@ -1,6 +1,6 @@
 <template>
-  <section class="recipe-card__instructions">
-    <h2 class="recipe-card__subtitle">Instructions</h2>
+  <section>
+    <h2>Instructions</h2>
     <ol class="recipe-card__instruction-list">
       <li>
         <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper

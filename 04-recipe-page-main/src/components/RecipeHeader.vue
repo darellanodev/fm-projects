@@ -5,7 +5,7 @@
       alt="Simple Omelette"
       class="recipe-card__image"
     />
-    <h1 class="recipe-card__title">Simple Omelette Recipe</h1>
+    <h1>Simple Omelette Recipe</h1>
   </header>
 </template>
 

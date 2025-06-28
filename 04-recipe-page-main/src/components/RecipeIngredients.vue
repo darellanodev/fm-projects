@@ -1,6 +1,6 @@
 <template>
-  <section class="recipe-card__ingredients">
-    <h2 class="recipe-card__subtitle">Ingredients</h2>
+  <section>
+    <h2>Ingredients</h2>
     <ul class="recipe-card__ingredient-list">
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
