@@ -10,7 +10,7 @@ class Card extends HTMLElement {
             <img class="card__image" src="${this.getAttribute('image') || ''}" alt="Article illustration" title="${this.getAttribute('title') || ''}">
           </a>
           <p class="card__challenge">
-            ${this.getAttribute('challenge') || ''}
+            Project ${this.getAttribute('project') || ''}
           </p>
           <a class="card__title" href="${this.getAttribute('href') || '#'}">${this.getAttribute('title') || ''}</a>
           <div class="card__description">
