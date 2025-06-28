@@ -1,6 +1,6 @@
 <template>
   <section class="recipe-card__preparation">
-    <h2 class="recipe-card__subtitle">Preparation time</h2>
+    <h2>Preparation time</h2>
     <ul>
       <li><strong>Total</strong>: Approximately 10 minutes</li>
       <li><strong>Preparation</strong>: 5 minutes</li>
@@ -20,5 +20,8 @@
 
 .recipe-card__preparation > h2 {
   margin-top: 0;
+  color: var(--color-rose-800);
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 </style>
