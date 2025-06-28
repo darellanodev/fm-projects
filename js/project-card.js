@@ -1,6 +1,10 @@
 class Card extends HTMLElement {
+  static lastCardNumber = 0
   constructor() {
     super()
+    this.index = Card.lastCardNumber + 1
+    Card.lastCardNumber = this.index
+
     const shadow = this.attachShadow({ mode: 'open' })
     shadow.innerHTML = `
       <link rel="stylesheet" href="./css/style.css">
@@ -10,7 +14,7 @@ class Card extends HTMLElement {
             <img class="card__image" src="${this.getAttribute('image') || ''}" alt="Article illustration" title="${this.getAttribute('title') || ''}">
           </a>
           <p class="card__challenge">
-            Project ${this.getAttribute('project') || ''}
+            Project ${this.index}
           </p>
           <a class="card__title" href="${this.getAttribute('href') || '#'}">${this.getAttribute('title') || ''}</a>
           <div class="card__description">
