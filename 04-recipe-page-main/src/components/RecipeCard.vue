@@ -18,4 +18,8 @@ import RecipeInstructions from './RecipeInstructions.vue'
 import RecipeNutrition from './RecipeNutrition.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+.recipe-card {
+  margin-top: var(--spacing-xl);
+}
+</style>
