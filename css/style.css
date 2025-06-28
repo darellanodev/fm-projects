@@ -4,25 +4,11 @@
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-}
-
 :root {
   font-size: 14px;
-  --background-page: #cba4db;
-  --background-footer: #222;
-  --color-footer-text: #fff;
-  --color-footer-links: #777;
-  --color-footer-links-hover: #fff;
-  --background-card: #fff;
-  --color-gray-950: #111;
-  --color-gray-500: #6b6b6b;
+  --color-dark: #111;
+  --color-mid-dark: #777;
+  --color-light: #fff;
   --radius-card: 1rem;
   --padding-card: 1rem;
   --size-text-title: 1.2rem;
@@ -31,13 +17,23 @@ h6 {
   --size-text-footer: 0.8rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: var(--color-light);
+}
+
 body {
   font-family: 'Figtree', sans-serif;
   font-weight: 500;
   line-height: 1.2rem;
   min-height: 100vh;
   margin: 0;
-  background: var(--background-page);
+  background: var(--color-dark);
   display: flex;
   flex-direction: column;
 }
@@ -51,7 +47,7 @@ main {
 }
 
 .card {
-  background: var(--background-card);
+  background-color: var(--color-mid-dark);
   border-radius: var(--radius-card);
   width: min(20rem, 85vw);
   border-style: solid;
@@ -63,7 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  color: var(--color-gray-950);
+  color: var(--color-dark);
 }
 
 .card__image {
@@ -92,19 +88,19 @@ a.card__title {
   letter-spacing: -0.02rem;
   font-size: var(--size-text-title);
   font-weight: 800;
-  color: var(--color-gray-950);
+  color: var(--color-dark);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a.card__title:hover {
-  color: var(--background-page);
+  color: var(--color-light);
   cursor: pointer;
 }
 
 .card__description {
   font-size: 0.8rem;
-  color: var(--color-gray-500);
+  color: var(--color-dark);
   letter-spacing: 0.02rem;
 }
 
@@ -123,13 +119,13 @@ a.card__title:hover {
   font-size: var(--size-text-card);
   font-weight: 800;
   text-decoration: none;
-  color: var(--color-gray-950);
+  color: var(--color-dark);
   transition: color 0.2s;
 }
 
 .card__author:hover .card__author-name,
 .card__author:focus .card__author-name {
-  color: var(--background-page);
+  color: var(--color-light);
   cursor: pointer;
 }
 
@@ -139,8 +135,8 @@ a.card__title:hover {
 }
 
 footer {
-  background: var(--background-footer);
-  color: var(--color-footer-text);
+  background: var(--color-mid-dark);
+  color: var(--color-light);
   text-align: center;
   padding: 0.8rem;
   font-size: var(--size-text-footer);
@@ -149,11 +145,12 @@ footer {
 }
 
 footer > a {
-  color: var(--color-footer-links);
+  color: var(--color-dark);
+  transition: color 0.2s;
 }
 
 footer > a:hover {
-  color: var(--color-footer-links-hover);
+  color: var(--color-light);
 }
 
 .card-list {
@@ -175,6 +172,6 @@ footer > a:hover {
 }
 
 .page__subtitle {
-  color: white;
+  color: var(--color-mid-dark);
   font-weight: bold;
 }
