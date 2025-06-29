@@ -35,7 +35,7 @@
   --radius-card: 1rem;
   --radius-md: 0.7rem;
   --padding-table: var(--spacing-s);
-  --width-card: 45rem;
+  --width-card: clamp(18rem, 70vw, 45rem);
 }
 
 body {
@@ -54,7 +54,7 @@ h2 {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
-  font-size: clamp(1.5rem, 6.5vw, 2.4rem);
+  font-size: clamp(1.2rem, 4.5vw, 2.4rem);
   color: var(--color-stone-900);
 }
 
