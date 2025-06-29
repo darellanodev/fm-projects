@@ -5,18 +5,20 @@ class Card extends HTMLElement {
     this.index = Card.lastCardNumber + 1
     Card.lastCardNumber = this.index
 
+    const href = `${this.getAttribute('dir')}/${this.getAttribute('index') || 'index.html'}`
+
     const shadow = this.attachShadow({ mode: 'open' })
     shadow.innerHTML = `
       <link rel="stylesheet" href="./css/style.css">
       <article class="card">
         <div class="card__content">
-          <a class="card__image-link" href="${this.getAttribute('href') || '#'}" title="${this.getAttribute('title') || ''}">
-            <img class="card__image" src="${this.getAttribute('image') || ''}" alt="Article illustration" title="${this.getAttribute('title') || ''}">
+          <a class="card__image-link" href="${href}" title="${this.getAttribute('title') || ''}">
+            <img class="card__image" src="./${this.getAttribute('dir')}/screenshot.png" alt="Article illustration" title="${this.getAttribute('title') || ''}">
           </a>
           <p class="card__challenge">
             Project ${this.index}
           </p>
-          <a class="card__title" href="${this.getAttribute('href') || '#'}">${this.getAttribute('title') || ''}</a>
+          <a class="card__title" href="${href}">${this.getAttribute('title') || ''}</a>
           <div class="card__description">
             ${this.getAttribute('description') || ''}
           </div>
