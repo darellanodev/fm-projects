@@ -36,10 +36,16 @@
   --radius-md: 0.7rem;
   --padding-table: var(--spacing-s);
   --width-card: clamp(18rem, 70vw, 45rem);
+
+  --font-size-sm: 0.8rem;
+  --font-size-md: clamp(0.9rem, 3.5vw, 1.3rem);
+  --font-size-lg: clamp(1.1rem, 4vw, 2rem);
+  --font-size-xl: clamp(1.2rem, 4.5vw, 2.4rem);
 }
 
 body {
   font-family: var(--font-primary);
+  font-size: var(--font-size-md);
   font-weight: 400;
   color: var(--color-stone-600);
   background-color: var(--color-stone-100);
@@ -54,12 +60,13 @@ h2 {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
-  font-size: clamp(1.2rem, 4.5vw, 2.4rem);
+  font-size: var(--font-size-xl);
   color: var(--color-stone-900);
 }
 
 h2 {
   font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
   font-weight: 400;
   color: var(--color-brown-800);
 }

@@ -21,7 +21,7 @@
 .recipe-card__preparation > h2 {
   margin-top: 0;
   color: var(--color-rose-800);
-  font-size: 1.1rem;
+  font-size: var(--font-size-md);
   font-weight: 700;
 }
 </style>
