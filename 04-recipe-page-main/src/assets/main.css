@@ -45,12 +45,20 @@
   /* Component sizing */
   --padding-table: var(--spacing-s);
   --width-card: clamp(18rem, 70vw, 45rem);
+
+  /* Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Misc */
+  --border-width: 1px;
+  --border-style: solid;
 }
 
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-md);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   color: var(--color-stone-600);
   background-color: var(--color-stone-100);
 }
@@ -63,7 +71,7 @@ h2 {
 
 h1 {
   font-family: var(--font-secondary);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-xl);
   color: var(--color-stone-900);
 }
@@ -71,7 +79,7 @@ h1 {
 h2 {
   font-family: var(--font-secondary);
   font-size: var(--font-size-lg);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   color: var(--color-brown-800);
 }
 
@@ -111,17 +119,17 @@ article > img {
 section > table {
   width: 100%;
   color: var(--color-brown-800);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 section > table td {
-  border-bottom: 1px solid var(--color-stone-150);
+  border-bottom: var(--border-width) var(--border-style) var(--color-stone-150);
   padding: var(--padding-table);
 }
 
 hr {
   margin-top: var(--spacing-lg);
   background-color: var(--color-stone-150);
-  height: 1px;
+  height: var(--border-width);
   border: none;
 }
