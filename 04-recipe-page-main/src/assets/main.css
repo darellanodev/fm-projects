@@ -24,16 +24,17 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   /* spacing & sizing */
-  --spacing-xs: 0.8rem;
-  --spacing-s: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-md-lg: 1.7rem;
-  --spacing-list: 1.8rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 5rem;
+  --spacing-xs: clamp(0.6rem, 2vw, 0.8rem);
+  --spacing-s: clamp(0.8rem, 2.5vw, 1rem);
+  --spacing-md: clamp(1rem, 3vw, 1.5rem);
+  --spacing-md-lg: clamp(1.2rem, 3.5vw, 1.7rem);
+  --spacing-list: clamp(1.4rem, 4vw, 1.8rem);
+  --spacing-lg: clamp(1.6rem, 4.5vw, 2rem);
+  --spacing-xl: clamp(3rem, 8vw, 5rem);
 
-  --radius-card: 1rem;
-  --radius-md: 0.7rem;
+  --radius-card: clamp(0.8rem, 2.5vw, 1rem);
+  --radius-md: clamp(0.5rem, 2vw, 0.7rem);
+
   --padding-table: var(--spacing-s);
   --width-card: clamp(18rem, 70vw, 45rem);
 
