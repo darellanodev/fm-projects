@@ -3,7 +3,13 @@
     <RecipeCard />
   </main>
   <footer>
-    Challenge by <a href="#">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://darellanodev.github.io" target="_blank" rel="noopener">darellanodev</a>. Code
+    repository on
+    <a href="https://github.com/darellanodev/fm-projects" target="_blank" rel="noopener">GitHub</a>.
   </footer>
 </template>
 
