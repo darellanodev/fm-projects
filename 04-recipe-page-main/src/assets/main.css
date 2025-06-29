@@ -54,7 +54,7 @@ h2 {
 h1 {
   font-family: var(--font-secondary);
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: clamp(1.5rem, 6.5vw, 2.4rem);
   color: var(--color-stone-900);
 }
 
@@ -90,17 +90,6 @@ article {
   background-color: var(--color-white);
   border-radius: var(--radius-card);
   padding: var(--spacing-md-lg);
-}
-
-footer {
-  margin-top: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-  color: var(--color-stone-900);
-  text-align: center;
-}
-
-footer > a {
-  color: var(--color-rose-800);
 }
 
 article > img {
