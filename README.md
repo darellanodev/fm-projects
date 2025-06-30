@@ -15,3 +15,4 @@ This repository contains projects that I am working on from the Frontend Mentor 
 - [01-qr-code-component](https://github.com/darellanodev/fm-projects/tree/main/01-qr-code-component)
 - [02-blog-preview-card](https://github.com/darellanodev/fm-projects/tree/main/02-blog-preview-card)
 - [03-social-links-profile](https://github.com/darellanodev/fm-projects/tree/main/03-social-links-profile)
+- [04-recipe-page](https://github.com/darellanodev/fm-projects/tree/main/04-recipe-page)
