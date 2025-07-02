@@ -82,15 +82,20 @@ main {
   cursor: pointer;
 }
 
-.card__challenge {
+.card__badge {
   display: inline-block;
   font-size: var(--size-text-date);
-  margin-top: -0.5rem;
   color: var(--color-light);
   background-color: var(--color-dark);
   padding: 0.1rem 0.3rem;
   border-radius: 0.5rem;
   align-self: flex-start;
+}
+
+.card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 a.card__title {
