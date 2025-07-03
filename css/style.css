@@ -1,16 +1,40 @@
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  font-size: 14px;
+  /* Colors */
   --color-dark: #111;
   --color-mid-dark: #777;
   --color-light: #fff;
+
+  /* Font */
+  font-size: 14px;
+  --font-family: 'Figtree', sans-serif;
+
+  /* Border radius */
   --radius-card: 1rem;
+  --radius-image: 0.6rem;
+
+  /* Card sizing */
+  --size-card-width: 18rem;
+  --size-image-height: 10rem;
+  --size-author-img: 25px;
+
+  /* Spacing */
   --padding-card: 1rem;
+  --gap-card: 20px;
+  --gap-content: 0.8rem;
+  --gap-badges: 0.3rem;
+  --gap-author: 0.5rem;
+  --gap-footer: 0.8rem;
+  --gap-list: 0.9rem;
+  --margin-main-top: 2rem;
+  --margin-list: 1.5rem;
+
+  /* Font sizes */
   --size-text-title: 1.2rem;
   --size-text-card: 0.7rem;
   --size-text-date: 0.8rem;
@@ -28,11 +52,10 @@ h6 {
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
   line-height: 1.2rem;
   min-height: 100vh;
-  margin: 0;
   background: var(--color-dark);
   display: flex;
   flex-direction: column;
@@ -43,39 +66,39 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: var(--margin-main-top);
 }
 
 .card-grid {
-  margin-top: 2rem;
+  margin-top: var(--margin-main-top);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 0fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--size-card-width), 0fr));
+  gap: var(--gap-card);
   justify-content: center;
   width: 100%;
 }
+
 .card {
-  width: 18rem;
+  width: var(--size-card-width);
   background-color: var(--color-mid-dark);
   border-radius: var(--radius-card);
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid var(--color-dark);
 }
 
 .card__content {
   padding: var(--padding-card);
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: var(--gap-content);
   color: var(--color-dark);
 }
 
 .card__image {
   width: 100%;
+  height: var(--size-image-height);
   object-fit: cover;
   object-position: top;
-  border-radius: 0.6rem;
-  height: 10rem;
+  border-radius: var(--radius-image);
 }
 
 .card__image-link {
@@ -103,7 +126,7 @@ main {
 .card__badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: var(--gap-badges);
 }
 
 a.card__title {
@@ -129,12 +152,12 @@ a.card__title:hover {
 .card__author {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--gap-author);
   text-decoration: none;
 }
 
 .card__author-image {
-  width: 25px;
+  width: var(--size-author-img);
 }
 
 .card__author-name {
@@ -160,7 +183,7 @@ footer {
   background: var(--color-mid-dark);
   color: var(--color-light);
   text-align: center;
-  padding: 0.8rem;
+  padding: var(--gap-footer);
   font-size: var(--size-text-footer);
   display: flex;
   justify-content: center;
@@ -180,8 +203,8 @@ footer > a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.9rem;
-  margin: 1.5rem;
+  gap: var(--gap-list);
+  margin: var(--margin-list);
   flex-direction: row-reverse;
 }
 
