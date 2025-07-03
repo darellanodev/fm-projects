@@ -14,5 +14,6 @@
 <style scoped>
 .recipe-card__header > img {
   width: 100%;
+  border-radius: var(--radius-md);
 }
 </style>
