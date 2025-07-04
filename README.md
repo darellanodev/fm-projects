@@ -6,6 +6,10 @@ This repository contains projects that I am working on from the Frontend Mentor 
 
 <https://github.com/darellanodev/fm-projects>
 
+## Screenshots
+
+![projects screenshot](https://github.com/darellanodev/fm-projects/blob/main/img_github_readme/screenshot.png?raw=true)
+
 ## Try it online
 
 <https://darellanodev.github.io/fm-projects/>
