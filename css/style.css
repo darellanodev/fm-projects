@@ -217,9 +217,11 @@ footer > a:hover {
 
 .page__title {
   margin-bottom: 1.8rem;
+  line-height: 2.5rem;
 }
 
 .page__subtitle {
   color: var(--color-mid-dark);
   font-weight: bold;
+  line-height: 1.5rem;
 }
