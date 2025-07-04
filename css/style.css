@@ -34,6 +34,7 @@
   --gap-footer: 0.8rem;
   --gap-list: 0.9rem;
   --margin-main-top: 2rem;
+  --margin-main-bottom: 4rem;
   --margin-list: 1.5rem;
 
   /* Font sizes */
@@ -73,6 +74,7 @@ main {
 
 .card-grid {
   margin-top: var(--margin-main-top);
+  margin-bottom: var(--margin-main-bottom);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--size-card-width), 0fr));
   gap: var(--gap-card);
